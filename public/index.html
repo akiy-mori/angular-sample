@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="angular-sample">
+<head lang="ja">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>angular-sample</title>
+  <link rel="stylesheet" href="main.css">
+<script src="bundle.js"></script>
+</head>
+<body>
+  <div ng-controller="RootController as rootCtrl">
+    <div class="container-fluid" style="padding: 20px 0 0 20px">
+      <div class="row">
+        <div class="col-xs-12">
+          <my-menu src="rootCtrl.menu"></my-menu>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
