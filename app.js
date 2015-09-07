@@ -5,23 +5,23 @@ var logger = require('morgan');
 var app = express();
 
 /*
-  ビューテンプレートエンジンの設定
+
 */
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 /*
-  ログ出力の設定
+
 */
 app.use(logger('dev'));
 
 /*
-  静的コンテンツの設定
+
 */
 app.use(express.static(path.join(__dirname, 'public')));
 
 /*
-  エラーハンドリングの設定
+ 
 */
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
